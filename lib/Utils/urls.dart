@@ -1,6 +1,6 @@
 class Urls {
   //static const baseUrl = "http://143.110.181.12:7070/api/";
-  static const baseUrl = "https://sacrosys.net:6662/api/";
+  static const baseUrl = "https://sacrosys.net:6664/api/";
   static const login = "${baseUrl}2878/Verification";
   static const categories = "${baseUrl}8363/getVendorClassifications";
   static const stores = "${baseUrl}8363/getApprovedVendorsForFlutter";

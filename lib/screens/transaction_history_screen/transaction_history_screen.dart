@@ -152,7 +152,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
     if (isLoading) {
       return Center(child: CircularProgressIndicator());
     } else if (errorOccurred) {
-      return Center(child: Text('Error fetching transactions'));
+      return Center(child: Text('No Transactions yet...'));
     } else if (transactions.isEmpty) {
       return Center(
         child: Text(
