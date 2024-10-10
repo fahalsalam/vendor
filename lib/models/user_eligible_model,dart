@@ -1,0 +1,26 @@
+
+import 'dart:convert';
+
+UserEligible userEligibleFromJson(String str) => UserEligible.fromJson(json.decode(str));
+
+String userEligibleToJson(UserEligible data) => json.encode(data.toJson());
+
+class UserEligible {
+    bool isEligible;
+    String reason;
+
+    UserEligible({
+        required this.isEligible,
+        required this.reason,
+    });
+
+    factory UserEligible.fromJson(Map<String, dynamic> json) => UserEligible(
+        isEligible: json["isEligible"],
+        reason: json["reason"],
+    );
+
+    Map<String, dynamic> toJson() => {
+        "isEligible": isEligible,
+        "reason": reason,
+    };
+}
